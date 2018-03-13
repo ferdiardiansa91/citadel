@@ -1,0 +1,196 @@
+/*
+ * This for slide
+ * Left Social Blocks and Contact Number
+ */
+
+.top-bg-slide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  background: url('../../../assets/img/top-slide.png') center center no-repeat;
+  background-size: cover;
+  margin: 0!important;
+}
+
+.top-bg-slide .bg-overlay {
+  background: url('../../../assets/img/shape-text.png') center center;
+  background-color: rgba(0, 0, 0, .5);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.left-info {
+  background-color: #3d3d3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+}
+
+.left-info .container {  padding: 35px 0; }
+
+.left-info .social-media-block{ height: auto; }
+
+.left-info .social-media-block ul { margin-bottom: 0; }
+
+.left-info .social-media-block ul li {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #555555;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-info .social-media-block ul li:last-child { margin-bottom: 0; }
+
+.left-info .social-media-block ul li a {
+  color: #f3f3f3;
+}
+
+.left-info .divider {
+   /*position:absolute;*/
+    width: 5px;
+    height: 60px;
+    border-left:1px solid #545454;
+    margin: 30px auto;
+}
+
+.left-info .email-block a,
+.left-info .phone-block a{
+  writing-mode: tb-rl;
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 12px;
+  transform: rotate(-180deg);
+}
+
+.left-info .email-block i,
+.left-info .phone-block i{
+  margin: 10px 0;
+}
+
+.left-info .email-block {
+  margin-bottom: 25px;
+}
+
+/*
+ * form styling 
+*/
+.top-bg-slide .center-form {
+  position: absolute;
+  left: 80px;
+  right: 0;
+  bottom: 100px;
+}
+
+.top-bg-slide .title::before {
+  position: absolute;
+  border-width: 1px;
+  width: 10px;
+  color: #ffffff;
+}
+
+.top-bg-slide .title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.top-bg-slide .title h1 {
+  font-size: 24px;
+}
+
+.top-bg-slide .title h1:before,
+.top-bg-slide .title h1:after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 80px;
+  border-radius: 50px;
+  box-shadow: rgba(0,0,0,0.8) 0 1px 10px;
+}
+
+.top-bg-slide .title h1:before {
+  margin-right: 30px;
+}
+
+.top-bg-slide .title h1:after {
+  margin-left: 30px;
+}
+
+.top-bg-slide .form-area {
+  width: 1030px;
+  background-color: #f3f3f3;
+  padding: 20px 30px;
+  font-size: 13px;
+}
+
+.top-bg-slide .form-area .area input{ width: 340px; }
+.top-bg-slide .form-area .check-in input{ width: 151px; }
+.top-bg-slide .form-area .check-out input{ width: 151px; }
+.top-bg-slide .form-area .guests input{ width: 132px; }
+
+.top-bg-slide .form-area input{ 
+  font-size: 13px; 
+  border-radius: 0;
+  border-color: #e0e0e0;
+  background-color: transparent;
+}
+
+.top-bg-slide .form-area i{ 
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 13px;
+  color: #3d3d3d;
+}
+
+/*
+ * disable hover effect by bootstrap
+*/
+.top-bg-slide .form-area input:focus{ 
+  border-color: #e0e0e0;
+}
+.top-bg-slide .form-area input:focus{ 
+  box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+}
+
+.top-bg-slide .form-area .input-group:not(.area) input{ 
+  border-left: 0;
+}
+
+.top-bg-slide .form-area .btn-find-process{ 
+  width: 179px;
+  font-size: 12px; 
+  border-radius: 0;
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+  margin-left: 17px;
+}
+
+.top-bg-slide .form-area .btn-find-process:hover{ 
+  background-color: transparent;
+  color: #333333;
+  transition: .4s all ease;  
+}
+
+.top-bg-slide .form-area .btn-find-process:active{ 
+  background-color: transparent;
+  color: #333333;
+  border-color: #3d3d3d;
+  box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+}
