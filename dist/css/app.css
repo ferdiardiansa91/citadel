@@ -1,10 +1,30 @@
 @import "__utilities.css";
 @import "__icon.css";
+@import "font.css";
 
+@import "navbar.css";
 @import "./home/top-slide.css";
+@import "./home/featured-properties.css";
+@import "./home/locations.css";
+@import "./home/about-us.css";
+@import "./home/bottom-information.css";
+
+/*
+ * Mobile
+*/
+@import './mobile/m-navbar.css';
+@import './mobile/app-home/m-top-slide.css';
+@import './mobile/app-home/m-featured-properties.css';
+@import './mobile/app-home/m-locations.css';
+@import './mobile/app-home/m-about-us.css';
+@import './mobile/app-home/m-bottom-information.css';
+@import './mobile/app-home/m-footer.css';
+
+
+body{ background-color: #f3f3f3;box-sizing: border-box; }
 
 .container {
-  max-width: 960px;
+  /*max-width: 960px;*/
 }
 
 /*
@@ -47,33 +67,21 @@
 }
 
 
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
+footer {
+  background-color: #333333;
+  height: 60px;
+  color: #b3b3b3;
+  font-size: 14px;
+  padding: 0 80px; 
 }
-
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
-}
-
 
 /*
  * Extra utilities
  */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .flex-md-equal > * {
     -ms-flex: 1;
     -webkit-box-flex: 1;
     flex: 1;
   }
-}
+}*/

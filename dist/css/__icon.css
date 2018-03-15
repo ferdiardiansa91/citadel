@@ -60,3 +60,10 @@
 	height: 17px;
 	display: block;
 }
+
+.icon-building {
+	background: url('./../../assets/img/icon/building.png') no-repeat center center;
+	width: 16px;
+	height: 16px;
+	display: block;
+}
