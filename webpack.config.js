@@ -1,14 +1,17 @@
 const webpack 	= require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-console.log(process.env.NODE_ENV)
 
+const isProd = process.env.NODE_ENV !== 'development';
+const folder = isProd ? 'dist' : 'build';
+
+console.log(`is : ${folder}`)
 module.exports = {
    entry : {
-   	'app' : ['./dist/css/app.css']
+   	'app' : ['./src/css/app.css']
    },
    output : {
-      filename : ((!process.env.NODE_ENV) ? 'build' : 'dist') + '/css/[name].css'
+      filename : `${folder}/css/[name].css`
    },
    module: {
      rules : [
@@ -20,7 +23,7 @@ module.exports = {
 		        {
 		        	loader   : 'css-loader',
 		        	options  : {
-			        	minimize : !process.env.NODE_ENV 
+			        	minimize : isProd 
 		        	}
 		        }
 	        ]
@@ -42,6 +45,6 @@ module.exports = {
      ]
    },
    plugins : [
-      new ExtractTextPlugin({filename : './build/css/[name].css'})
+      new ExtractTextPlugin({filename : `./${folder}/css/[name].css`})
    ]
 }

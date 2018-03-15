@@ -1,0 +1,87 @@
+@import "__utilities.css";
+@import "__icon.css";
+@import "font.css";
+
+@import "navbar.css";
+@import "./home/top-slide.css";
+@import "./home/featured-properties.css";
+@import "./home/locations.css";
+@import "./home/about-us.css";
+@import "./home/bottom-information.css";
+
+/*
+ * Mobile
+*/
+@import './mobile/m-navbar.css';
+@import './mobile/app-home/m-top-slide.css';
+@import './mobile/app-home/m-featured-properties.css';
+@import './mobile/app-home/m-locations.css';
+@import './mobile/app-home/m-about-us.css';
+@import './mobile/app-home/m-bottom-information.css';
+@import './mobile/app-home/m-footer.css';
+
+
+body{ background-color: #f3f3f3;box-sizing: border-box; }
+
+.container {
+  /*max-width: 960px;*/
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: transparent;
+  /*position: fixed;*/
+  /*background-color: rgba(0, 0, 0, .85);*/
+  /*-webkit-backdrop-filter: saturate(180%) blur(20px);*/
+  /*backdrop-filter: saturate(180%) blur(20px);*/
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Main menu
+*/
+.main-menu {
+  background-color: transparent;
+  left: 80px;
+  top: 80px;
+}
+
+.main-menu .site-header .container a {
+  font-size: 12px;
+  color: #f3f3f3;
+  font-weight: 600;
+}
+
+.main-menu .site-header .container .nav-logo {
+  margin-top: -83px;
+}
+
+
+footer {
+  background-color: #333333;
+  height: 60px;
+  color: #b3b3b3;
+  font-size: 14px;
+  padding: 0 80px; 
+}
+
+/*
+ * Extra utilities
+ */
+/*@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}*/

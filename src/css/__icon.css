@@ -1,0 +1,69 @@
+.icon-marker {
+	background: url('./../../assets/img/icon/marker.png') no-repeat center center;
+	width: 14px;
+	height: 16px;
+	display: block;
+}
+
+.icon-calender {
+	background: url('./../../assets/img/icon/calender.png') no-repeat center center;
+	width: 14px;
+	height: 16px;
+	display: block;
+}
+
+.icon-guests {
+	background: url('./../../assets/img/icon/guests.png') no-repeat center center;
+	width: 14px;
+	height: 16px;
+	display: block;
+}
+
+.icon-facebook {
+	background: url('./../../assets/img/icon/facebook.png') no-repeat center center;
+	width: 8px;
+	height: 16px;
+	display: block;
+}
+
+.icon-twitter {
+	background: url('./../../assets/img/icon/twitter.png') no-repeat center center;
+	width: 16px;
+	height: 12px;
+	display: block;
+}
+
+.icon-youtube {
+	background: url('./../../assets/img/icon/youtube.png') no-repeat center center;
+	width: 10px;
+	height: 12px;
+	display: block;
+}
+
+.icon-instagram {
+	background: url('./../../assets/img/icon/instagram.png') no-repeat center center;
+	width: 16px;
+	height: 16px;
+	display: block;
+}
+
+.icon-mail {
+	background: url('./../../assets/img/icon/mail.png') no-repeat center center;
+	width: 16px;
+	height: 12px;
+	display: block;
+}
+
+.icon-phone {
+	background: url('./../../assets/img/icon/phone.png') no-repeat center center;
+	width: 16px;
+	height: 17px;
+	display: block;
+}
+
+.icon-building {
+	background: url('./../../assets/img/icon/building.png') no-repeat center center;
+	width: 16px;
+	height: 16px;
+	display: block;
+}
