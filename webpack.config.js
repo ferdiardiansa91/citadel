@@ -1,11 +1,10 @@
 const webpack 	= require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const isProd = process.env.NODE_ENV !== 'development';
 const folder = isProd ? 'dist' : 'build';
 
-console.log(`is : ${folder}`)
 module.exports = {
    entry : {
    	'app' : ['./src/css/app.css']
@@ -44,7 +43,14 @@ module.exports = {
 	}
      ]
    },
+   watch   : !isProd,
    plugins : [
-      new ExtractTextPlugin({filename : `./${folder}/css/[name].css`})
+      new ExtractTextPlugin({filename : `./${folder}/css/[name].css`}),
+
+      new BrowserSyncPlugin({
+      	port  : 9090,
+      	host  : 'localhost',
+      	open  : true   
+      })
    ]
 }
