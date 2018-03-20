@@ -3,10 +3,22 @@
  * Left Social Blocks and Contact Number
  */
 
+.shape-citadel-text {
+  background: url('../../../assets/img/citadel-text-3.png') center -88px no-repeat;
+  /*background-color: rgba(0, 0, 0, .5);*/
+  /*background-size: cover;*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .top-bg-slide {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
+  height: 750px;
   background-color: #333;
   background: url('../../../assets/img/top-slide.png') center center no-repeat;
   background-size: cover;
@@ -14,11 +26,11 @@
 }
 
 .top-bg-slide .bg-overlay {
-  background: url('../../../assets/img/shape-text.png') center center;
+  /*background: url('../../../assets/img/shape-white-3.png') center center;*/
   background-color: rgba(0, 0, 0, .5);
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -31,13 +43,14 @@
   top: 0;
   width: 80px;
   height: 100%;
+  z-index: 2;
 }
 
 /*.left-info .container {  padding: 35px 0; }*/
 
 .left-info .container .wrapper{  
   padding: 35px 0; 
-  height: 100vh;
+  height: 100%;
   position: relative;
   display: block;
   padding: 20px 0;
@@ -50,22 +63,37 @@
 .left-info .social-media-block ul li {
   width: 34px;
   height: 34px;
-  border: 1px solid #555555;
+  border: 1px solid #545454;
+  border-radius: 2px;
   margin: 5px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.left-info .social-media-block ul li:hover,
+.left-info .social-media-block ul li:hover a{
+  background-color: #f7f7f7;
+  color: #3d3d3d;
+  transition: .4s all ease;
 }
 
 .left-info .social-media-block ul li:last-child { margin-bottom: 0; }
 
 .left-info .social-media-block ul li a {
-  color: #f3f3f3;
+  width: 100%;
+  height: 100%;
+  line-height: 2;
+  color: #cccccc;
+}
+
+.left-info .social-media-block ul li a svg{
+  font-size: 12px;
 }
 
 .left-info .divider {
-   /*position:absolute;*/
-    width: 5px;
+    width: 1px;
     height: 60px;
     border-left:1px solid #545454;
     margin: 30px auto;
@@ -75,8 +103,11 @@
 .left-info .phone-block a{
   writing-mode: tb-rl;
   text-decoration: none;
-  color: #f3f3f3;
-  font-size: 12px;
+  color: #cccccc;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-transform: uppercase;
   transform: rotate(-180deg);
 }
 
@@ -97,6 +128,7 @@
   left: 80px;
   right: 0;
   bottom: 100px;
+  z-index: 2;
 }
 
 .top-bg-slide .title::before {
@@ -113,11 +145,16 @@
 
 .top-bg-slide .title h1 {
   font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  color: rgb(255,255,255);
+  /*font-family: "Avenir Next";*/
+  text-align: center;
 }
 
 .top-bg-slide .title h1:before,
 .top-bg-slide .title h1:after {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   content: "";
   display: inline-block;
   height: 1px;
@@ -137,30 +174,35 @@
 }
 
 .top-bg-slide .form-area {
-  /*width: 1030px;*/
-  width: 85%;
-  background-color: #f3f3f3;
+  /*width: 90%;*/
+  width: 1130px;
   padding: 20px 30px;
   font-size: 13px;
   flex-flow: inherit!important;
+  border-radius: 2px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.49);
+  background-color: rgba(255,255,255,0.9490196078431372);
 }
 
-.top-bg-slide .form-area .area input{ width: 300px; }
-.top-bg-slide .form-area .check-in input{ width: 30%; }
-.top-bg-slide .form-area .check-out input{ width: 30%; }
-.top-bg-slide .form-area .guests input{ width: 20%; }
+.top-bg-slide .form-area .area{ width: 100%; }
+.top-bg-slide .form-area .check-in{ width: 40%; }
+.top-bg-slide .form-area .check-out{ width: 40%; }
+.top-bg-slide .form-area .guests{ width: 40%; }
 
-.top-bg-slide .form-area input{ 
-  font-size: 13px; 
+.top-bg-slide .form-area input{
+  height: 44px; 
   border-radius: 0;
   border-color: #e0e0e0;
+  font-size: 13px;
+  line-height: 64px;
+  color: rgb(153,153,153);
   background-color: transparent;
 }
 
 .top-bg-slide .form-area i{ 
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 15px;
   font-size: 13px;
   color: #3d3d3d;
 }
@@ -183,12 +225,17 @@
 
 .top-bg-slide .form-area .btn-find-process{ 
   /*width: 179px;*/
-  width: 20%;
-  font-size: 12px; 
+  width: 40%;
+  height: 44px;
   border-radius: 0;
   background-color: #3d3d3d;
   border-color: #3d3d3d;
   margin-left: 17px;
+  font-size: 12px;
+  line-height: 24px;
+  color: rgb(224,224,224);
+  font-weight: bold;
+  text-align: center;
 }
 
 .top-bg-slide .form-area .btn-find-process:hover{ 
@@ -201,6 +248,12 @@
   background-color: transparent;
   color: #333333;
   border-color: #3d3d3d;
+  box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+}
+
+.top-bg-slide .form-area .btn-find-process:focus{ 
   box-shadow: none!important;
     -webkit-box-shadow: none!important;
     -moz-box-shadow: none!important;

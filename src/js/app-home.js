@@ -26,6 +26,7 @@ $(document).ready(function() {
       arrows : false,
       centerPadding: '0px',
       // dots: false,
+      autoplay: true,
       draggable: false,
       responsive: [
           {
@@ -43,14 +44,21 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 800,
+            breakpoint: 992,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 781,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 460,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -78,17 +86,23 @@ $(document).ready(function() {
       setTimeout(function() { upBox(); }, 50);
    })
 
+   _elSlick.on('beforeChange', function(event, slick, currentSlide) {
+      clearUpBox();
+      
+      setTimeout(function() { upBox(); }, 50);
+   })
+
    function upBox() {
-      $('.slick-list .slick-active:eq(0)').css({
+      $('.slick-list .slick-current.slick-active').css({
         marginTop: '-50px',
-        transition: '.4s all ease'
+        // transition: '.4s all ease'
       })
     }
 
     function clearUpBox() {
-      $('.slick-list .slick-active:eq(0)').css({
+      $('.slick-list .slick-current.slick-active').css({
         marginTop: '0px',
-        transition: '.2s all ease'
+        // transition: '.2s all ease'
       }) 
     }
 

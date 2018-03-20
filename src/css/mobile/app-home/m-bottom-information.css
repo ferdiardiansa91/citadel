@@ -1,25 +1,11 @@
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 991px) {
 
 	.bottom-information {
 		padding: 30px;	
 		height: auto;
-		/*position: relative;
-		overflow: hidden;
-		background-color: #262626;
-		color: #7e7e7e;*/
 	}
 
 	.bottom-information .top-additional{ margin-bottom: 30px; }
-
-	/*.bottom-information .container .bottom-left-menu .bottom-title h3{
-		font-size: 24px;
-		color: #f7f7f7;
-	}*/
-
-	/*.bottom-information .container .bottom-left-menu .bottom-description p{
-		font-size: 14px;
-		color: #5f5f5f;
-	}*/
 
 	.bottom-information .container .bottom-right-menu {  display: block!important; }
 
@@ -77,6 +63,10 @@
 		list-style: none;
 	}*/
 
+	.bottom-additional .bottom-nav ul {
+		height: auto;
+	}
+	
 	.bottom-additional .bottom-nav ul li a{
 		font-size: 11px;
 	}
@@ -87,4 +77,22 @@
 		word-wrap: break-word;
 	}
 
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	.bottom-additional .sitemap{
+		max-width: 50%;
+	    flex: 0 0 50%;
+	}
+
+	.bottom-additional .social-media{
+		max-width: 50%;
+	    flex: 0 0 50%;
+	}
+
+	.bottom-additional .contact-us{
+		width: 100%;	
+		max-width: 100%;
+		flex: auto;
+	}
 }

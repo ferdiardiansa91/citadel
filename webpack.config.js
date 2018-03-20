@@ -15,32 +15,41 @@ module.exports = {
    module: {
      rules : [
      	{
-	    test  : /\.css$/,
-	    use   : ExtractTextPlugin.extract({
-	       fallback  : 'style-loader',
-	       use       : [
-		        {
-		        	loader   : 'css-loader',
-		        	options  : {
-			        	minimize : isProd 
-		        	}
-		        }
-	        ]
-	    })
-	},
-	{
-	    test  : /\.(png|jpg|gif)$/,
-	    use   : [
-	       {
-	          loader   : 'file-loader',
-			  options  : {
-			     name  : '../../assets/img/[name].[ext]',	           
-	             // publicPath : '/assets/media/',
-	             emitFile : false
-			  }
-	       }
-	    ]
-	}
+		    test  : /\.css$/,
+		    use   : ExtractTextPlugin.extract({
+		       fallback  : 'style-loader',
+		       use       : [
+			        {
+			        	loader   : 'css-loader',
+			        	options  : {
+				        	minimize : isProd 
+			        	}
+			        }
+		        ]
+		    })
+		},
+		{
+		    test  : /\.(png|jpg|gif)$/,
+		    use   : [
+		       {
+		          loader   : 'file-loader',
+				  options  : {
+				     name  : '../../assets/img/[name].[ext]',	           
+		             // publicPath : '/assets/media/',
+		             emitFile : false
+				  }
+		       }
+		    ]
+		},
+		{
+            test: /\.(eot|ttf|woff|woff2)$/,
+            loader: 'file-loader',
+            options : {
+            	name : '../../assets/fonts/AvenirNext/[name].[ext]',
+            	emitFile : false,
+            	// useRelativePath : true
+            }
+        },
      ]
    },
    watch   : !isProd,

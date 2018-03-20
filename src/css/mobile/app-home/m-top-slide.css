@@ -1,11 +1,30 @@
-@media screen and (max-width: 810px) {
+@media screen and (min-width: 992px) and (max-width: 1364px) {
+
+  .top-bg-slide .form-area .btn-find-process{ 
+    /*font-size: 9px; */
+  }
+
+  .top-bg-slide .form-area{
+    width: 90%;
+  }
+
+  .top-bg-slide .form-area input{
+    /*height: 44px; */
+    /*border-radius: 0;*/
+    /*border-color: #e0e0e0;*/
+    /*font-size: 11px;*/
+  }
+}
+
+
+@media screen and (max-width: 991px) {
 
     /*
    * This for slide
    * Left Social Blocks and Contact Number
    */
 
-  /*.top-bg-slide {  }*/
+  .top-bg-slide { height: 670px; }
 
   /*.top-bg-slide .bg-overlay {  }*/
 
@@ -14,7 +33,7 @@
     height: 100%;
   }
 
-  .left-info .container {  padding: 35px 0; }
+  .left-info .container {  padding: 0; }
 
   .left-info .social-media-block{ height: auto; }
 
@@ -31,6 +50,7 @@
 
   .left-info .social-media-block ul li a {
     color: #f3f3f3;
+    line-height: 1.5;
   }
 
   .left-info .social-media-block ul li a svg {
@@ -47,11 +67,7 @@
 
   .left-info .email-block a,
   .left-info .phone-block a{
-    writing-mode: tb-rl;
-    text-decoration: none;
-    color: #f3f3f3;
-    font-size: 12px;
-    transform: rotate(-180deg);
+    font-size: 11px;
   }
 
   .left-info .email-block i,
@@ -93,15 +109,7 @@
 
   .top-bg-slide .title h1:before,
   .top-bg-slide .title h1:after {
-    background-color: #ffffff;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
     width: 10%;
-    border-radius: 50px;
-    box-shadow: rgba(0,0,0,0.8) 0 1px 10px;
   }
 
   .top-bg-slide .title h1:before {
@@ -133,7 +141,7 @@
 
   .top-bg-slide .form-area i{ 
     font-size: 10px;
-    top: 5px;
+    top: 15px;
   }
 
   /*
@@ -165,12 +173,12 @@
   }*/
 
   .top-bg-slide .form-area .btn-find-process:active{ 
-    background-color: transparent;
+   /* background-color: transparent;
     color: #333333;
     border-color: #3d3d3d;
     box-shadow: none!important;
       -webkit-box-shadow: none!important;
-      -moz-box-shadow: none!important;
+      -moz-box-shadow: none!important;*/
   }
 
 }

@@ -1,5 +1,5 @@
 .featured-properties {
-	height: 960px;
+	height: 780px;
 	padding: 80px;
 	overflow: hidden;
 }
@@ -12,16 +12,26 @@
 .featured-properties .row .description,
 .featured-properties .row .slider{
 	height: 100%;
+	z-index: 2;
 }
 
 .featured-properties .description .description-wrapper .title h2{
 	font-size: 48px;
+	line-height: 54px;
+	color: rgb(61,61,61);
 	margin-bottom: 25px;
 }
 
 .featured-properties .description .description-wrapper .explanation p{
+	/*width: 270px;*/
+	/*height: 143px;*/
 	font-size: 14px;
-	margin-bottom: 55px;
+	line-height: 24px;
+	color: rgb(128,128,128);
+}
+
+.featured-properties .description .description-wrapper .slide-nav-controls{
+	margin-top: 60px;
 }
 
 .featured-properties .description .description-wrapper .slide-nav-controls a{
@@ -82,12 +92,14 @@
 	position: relative;
 	width: 1230px;
 	overflow: hidden;
+	z-index: 2;
 }
 
 .featured-properties .slider-box .thumbnail-box{
 	width: 350px;
 	height: auto;
 	margin-right: 25px;
+	transition: .2s all ease;
 }
 
 .featured-properties .slider-box .thumbnail-box:first-child{
@@ -106,21 +118,27 @@
 }
 
 .featured-properties .slider-box .thumbnail-box .info-properties .title h3{
-	color: #3d3d3d;
+/*	color: #3d3d3d;
 	font-size: 20px;
 	font-weight: 800;
+*/
+	font-size: 20px;
+	line-height: 24px;
+	color: rgb(61,61,61);
+	font-weight: bold;
 }
 
 .featured-properties .slider-box .thumbnail-box .info-properties .address p{
-	color: #808080;
 	font-size: 12px;
-	/*font-weight: 800;*/
+	line-height: 24px;
+	color: rgb(128,128,128);
 }
 
 .featured-properties .slider-box .thumbnail-box .info-properties .price p{
-	color: #3d3d3d;
 	font-size: 18px;
-	font-weight: 800;
+	line-height: 24px;
+	color: rgb(61,61,61);
+	font-weight: bold;
 }
 
 .featured-properties .slider-box .thumbnail-box .info-properties .btn-book-now{
@@ -175,4 +193,4 @@
 
 /*.slick-active:first-child .img-box{ margin-top: -50px; }*/
 
-.slick-active {  transition: '.2s all ease' }
+/*.slick-active {  transition: '.2s all ease' }*/

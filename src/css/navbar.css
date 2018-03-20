@@ -1,3 +1,23 @@
+
+.main-menu {
+  background-color: transparent;
+  left: 80px;
+  top: 80px;
+}
+
+.main-menu .site-header .container a {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: rgb(255,255,255);
+  font-family: "Avenir Next";
+  text-align: right;
+}
+
+.main-menu .site-header .container .nav-logo {
+  margin-top: -83px;
+}
+
 .navbar {
 	left: 80px;
 	background-color: transparent!important;
@@ -25,14 +45,19 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
- 	font-size: 13px;
-  	color: #f3f3f3;
-  	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	color: rgb(255,255,255);
   	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-	color: #808080;
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active
+ {
+	color: rgb(255,255,255);
+	border-bottom: 1px solid #ffffff;
 	transition: .2s all ease;
 }
 
