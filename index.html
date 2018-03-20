@@ -22,6 +22,9 @@
     <!-- Bootstrap Date Picker -->
     <link rel="stylesheet" href="src/css/datepicker/datepicker.css" />
 
+    <!-- Light Gallery -->
+    <link rel="stylesheet" type="text/css" href="src/css/lightgallery/lightgallery.css">
+
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
       
@@ -63,7 +66,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Inquiry</a>
+              <a class="nav-link" href="#">Enquiry</a>
             </li>
           </ul>
         </div>
@@ -72,7 +75,7 @@
 
     <!-- TOP SLIDE -->
     <section class="position-relative">
-      <section>
+      <div>
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light top-bg-slide">
           <div class="bg-overlay"></div>
 
@@ -145,10 +148,10 @@
           </form>
         </div>
         </div>
-      </section>
+      </div>
 
       <!-- FEATURED PROPERTIES -->
-      <section class="featured-properties">
+      <div class="featured-properties">
         <div class="container no-padding">
           <div class="row">
             <div class="col-sm-4 align-middle d-table description">
@@ -303,13 +306,82 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       
-      <section class="locations">
+      <!-- Gallery Scetion -->
+      <section class="gallery">
+        <div class="container no-padding">
+          <div id="gallery-slide" class="gallery-list d-flex">
+            <div class="gallery-box img-fluid" data-src="assets/img/gallery/slide-1.png">
+              <div class="img-area">
+                <img src="assets/img/gallery/slide-1.png">
+              </div>
+
+              <div class="icon-top d-flex align-items-center justify-content-center">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+
+            <div class="gallery-box img-fluid" data-src="assets/img/gallery/slide-1.png">
+              <div class="img-area">
+                <img src="assets/img/gallery/slide-1.png">
+              </div>
+
+              <div class="icon-top d-flex align-items-center justify-content-center">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+
+            <div class="gallery-box img-fluid" data-src="assets/img/gallery/slide-1.png">
+              <div class="img-area">
+                <img src="assets/img/gallery/slide-1.png">
+              </div>
+
+              <div class="icon-top d-flex align-items-center justify-content-center">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+
+            <div class="gallery-box img-fluid" data-src="assets/img/gallery/slide-1.png">
+              <div class="img-area">
+                <img src="assets/img/gallery/slide-1.png">
+              </div>
+
+              <div class="icon-top d-flex align-items-center justify-content-center">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+
+            <div class="gallery-box img-fluid" data-src="assets/img/gallery/slide-1.png">
+              <div class="img-area">
+                <img src="assets/img/gallery/slide-1.png">
+              </div>
+
+              <div class="icon-top d-flex align-items-center justify-content-center">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+
+            <div class="gallery-box img-fluid" data-src="assets/img/gallery/slide-1.png">
+              <div class="img-area">
+                <img src="assets/img/gallery/slide-1.png">
+              </div>
+
+              <div class="icon-top d-flex align-items-center justify-content-center">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Google Map Section -->
+      <div class="locations">
         <div id="map" height="460px" width="100%"></div>
         <div class="description-box">
           <div class="wrapper">
             <header class="title">
+              <h5>LOREM IPSUM</h5>
               <h3>Apartments Locations</h3>
             </header>
 
@@ -325,11 +397,10 @@
             </div>
           </div>        
         </div>
-      </section>
+      </div>
 
       <div class="shape-citadel-text"></div>
     </section>
-
 
     <section class="about-us">
       <div class="container no-padding">
@@ -491,7 +562,7 @@
     <script src="src/js/datepicker/datepicker.js"></script>
 
     <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
-
+    <script src="src/js/lightgallery/lightgallery.js"></script>
     <script src="src/js/app-home.js"></script>
 
      <!-- Bootstrap Date PIcker Js -->

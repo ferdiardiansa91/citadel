@@ -51,7 +51,8 @@
 @media screen and (max-width: 480px) {
 	.locations .description-box {
 		width: 80%;
-		height: 220px;
+		/*height: 220px;*/
+		height: auto;
 		bottom: -50px;
 		left: 0;
 		right: 0;

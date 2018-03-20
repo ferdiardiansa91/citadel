@@ -36,6 +36,7 @@
 .about-us .container .row .about-description {
 	padding-left: 80px;
 	height: 100%;
+	z-index: 3;
 }
 
 .about-us .container .row .about-description .title {

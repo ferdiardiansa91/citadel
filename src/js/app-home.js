@@ -18,6 +18,10 @@ $(document).ready(function() {
     stickyNavbar();
   }, false);
 
+
+  // Slide Gallery
+  $("#gallery-slide").lightGallery();
+
   // slider middle content
   var _elSlick = $('.slider-box').slick({
       slidesToShow: 3,

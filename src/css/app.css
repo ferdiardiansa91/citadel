@@ -5,6 +5,7 @@
 @import "navbar.css";
 @import "./home/top-slide.css";
 @import "./home/featured-properties.css";
+@import "./home/gallery.css";
 @import "./home/locations.css";
 @import "./home/about-us.css";
 @import "./home/bottom-information.css";
@@ -15,6 +16,7 @@
 @import './mobile/m-navbar.css';
 @import './mobile/app-home/m-top-slide.css';
 @import './mobile/app-home/m-featured-properties.css';
+@import "./mobile/app-home/m-gallery.css";
 @import './mobile/app-home/m-locations.css';
 @import './mobile/app-home/m-about-us.css';
 @import './mobile/app-home/m-bottom-information.css';
