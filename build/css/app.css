@@ -1834,6 +1834,10 @@ body {
 	  text-align: center; 
 	}
 
+	footer .container {
+		display: block!important;
+	}
+
 	footer.main-footer .copyright{
 		margin-bottom: 10px;
 	}
@@ -1866,6 +1870,8 @@ footer {
   	font-size: 14px;
   	padding: 0 80px; 
 }
+
+footer .container {  height: 100%; }
 
 footer p,
 footer a {
