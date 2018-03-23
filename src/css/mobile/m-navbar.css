@@ -9,14 +9,19 @@
 	.navbar.on-scroll .nav-logo{
 		position: relative;
 		left: 0;
+		margin-top: -10px;
 	}
 
 	.navbar-light .navbar-toggler {
 		border-color: transparent;
 		color: white;
 		z-index: 99;
+		position: absolute;
+		top: 20px;
+		right: 20px;
 	}
 
+	.navbar-light .navbar-toggler:focus { outline: none; }
 
 	/*
 	 * Navbar collapse show

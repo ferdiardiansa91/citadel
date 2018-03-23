@@ -1,5 +1,10 @@
+require('./../css/app.css');
+require('./map.js');
+
 // Nav sticky scroll
 $(document).ready(function() {
+  // (function() {
+
   function stickyNavbar() {
     var element = document.getElementById("nav"),
         offset  = element.offsetTop;
@@ -31,7 +36,7 @@ $(document).ready(function() {
       centerPadding: '0px',
       // dots: false,
       autoplay: true,
-      draggable: false,
+      // draggable: false,
       responsive: [
           {
             breakpoint: 1200,

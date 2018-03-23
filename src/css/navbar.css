@@ -31,8 +31,9 @@
 }
 
 .navbar.on-scroll .nav-logo{
-	position: absolute;
-	left: 40px;
+	/*position: absolute;*/
+	/*left: 40px;*/
+	margin-top: 90px;
 	transition: .4s all ease;
 }
 
