@@ -730,8 +730,14 @@ body {
 	z-index: 2;
 }
 
-.locations #map {
+.locations .container {
+	width: 100%;
 	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
 }
 
 .locations .description-box {
@@ -740,7 +746,7 @@ body {
 	background-color: #ffffff;
 	position: absolute;
 	bottom: -50px;
-	left: 100px;
+	left: 60px;
 	box-shadow: 8px 13.856px 25px rgba(0,0,0,0.1);
 	z-index: 99;
 }
@@ -773,11 +779,10 @@ body {
 }
 
 .locations .description-box .wrapper .bottom-link{
-	width: 210px;
-	position: absolute;
-	bottom: 0;
+	width: 100%;
 	border-top: 1px solid #e0e0e0;
 	padding: 20px 0;
+	margin-top: 50px;
 }
 
 .locations .description-box .wrapper .bottom-link a{
@@ -798,7 +803,7 @@ body {
 #map {
 	margin: 0;
 	padding: 0;
-	height: 400px;
+	height: 100%;
 	max-width: none;
 
   	transform-style:preserve-3d;
@@ -1490,34 +1495,37 @@ body {
 	/*.gallery .gallery-list .gallery-box .icon-top svg{
 		color: #f7f7f7;
 	}*/
-}@media screen and (max-width: 780px) {
+}@media screen and (max-width: 991px) {
 	.locations {
 		width: 100%;
 		height: 600px;
 		position: relative;
-	}
-
-	.locations #map {
-		height: 100%;
+		padding: 0 0 60px;
 	}
 
 	.locations .description-box {
 		width: 40%;
-		/*height: 220px;*/
 		height: auto;
-		bottom: -50px;
-		left: 30px;
-		right: 0;
+		bottom: 0;
+		left: 60px;
+		margin: 0 auto;
 		z-index: 99;
+		position: absolute;
 	}
 
 	.locations .description-box .wrapper{
 		height: 100%;
-		padding: 30px;
+		padding: 30px 30px 0;
+	}
+
+	.locations .description-box .wrapper .title h5{
+		line-height: initial;
 	}
 
 	.locations .description-box .wrapper .title h3{
-		font-size: 24px;
+		font-size: 20px;
+		margin-top: 20px;
+		line-height: initial;
 	}
 
 	.locations .description-box .wrapper .description p{
@@ -1525,7 +1533,8 @@ body {
 	}
 
 	.locations .description-box .wrapper .bottom-link{
-		bottom: 0;
+		width: 100%;
+		bottom: -58px;
 		padding: 10px 0;
 	}
 
@@ -1539,16 +1548,33 @@ body {
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
 	.locations .description-box {
-		width: 80%;
-		/*height: 220px;*/
+		width: 90%;
 		height: auto;
-		bottom: -50px;
+		bottom: 0;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
 		z-index: 99;
+		position: absolute;
+	}
+
+	.locations .description-box .wrapper{
+		padding: 20px 20px 0; 
+	}
+
+	.locations .description-box .wrapper .title h5{
+		line-height: initial;
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+
+	.locations .description-box .wrapper .title h3{
+		font-size: 20px;
+		margin-top: 10px;
+		margin-bottom: 0;
+		line-height: initial;
 	}
 
 	/*
