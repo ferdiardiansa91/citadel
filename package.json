@@ -4,9 +4,8 @@
   "description": "webpage with google api",
   "main": "index.js",
   "scripts": {
-    "start": "npm run prod",	
     "build": "NODE_ENV=development webpack --hide-modules --display-error-details --config webpack.config.js",
-    "prod": "NODE_ENV=production webpack --hide-modules --display-error-details --config webpack.config.js"
+    "start": "NODE_ENV=production webpack --hide-modules --display-error-details --config webpack.config.js"
   },
   "keywords": [
     "html",
